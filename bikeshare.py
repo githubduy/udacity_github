@@ -170,36 +170,6 @@ def time_stats(df):
     input("Press Enter to continue...")
 
 
-def time_stats_new(df):
-    """Displays statistics on the most frequent times of travel."""
-
-    print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
-
-    # TO DO: display the most common month
-    # The mode of a set of values is the value that appears most often. It can be multiple values.
-    mode_df_month = df['Month'].mode()
-    most_common_month_travel = mode_df_month[0]
-
-    # TO DO: display the most common day of week
-    mode_df_day = df['WeekDay'].mode()
-    most_common_day_travel = mode_df_day[0]
-
-    
-    # TO DO: display the most common start hour
-    mode_df_hour = df['Hour'].mode()
-    most_common_hour_travel = mode_df_hour[0]
-    
-    print("Time stats,Display most time for travel!\n")
-    print(f"  > Start at month: {most_common_month_travel} ")
-    print(f"  > Start at day of week: {most_common_day_travel} ")
-    print(f"  > Start at hour: {most_common_hour_travel} ")
-    
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
-    input("Press Enter to continue...")
-    
-
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
