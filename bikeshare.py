@@ -228,6 +228,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
     input("Press Enter to continue...")
+    
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -273,7 +274,8 @@ def user_stats(df):
     # 3. most common year of birth
     mode_df_year_of_birth =  df['Birth Year'].mode()
     most_common_year_of_birth = mode_df_year_of_birth.values[0]
-
+    
+    # Display stats
     print(f" > Earliest year of birth:", earliest_year_of_birth)
     print(f" > Most recent year of birth:", most_recent_year_of_birth)
     print(f" > Most common year of birtth:", most_common_year_of_birth)
